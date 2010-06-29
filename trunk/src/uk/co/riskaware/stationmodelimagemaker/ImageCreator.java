@@ -71,7 +71,7 @@ public class ImageCreator {
     }
 
     private void drawBarb(StationModel stationModel, Graphics2D g2D) {
-        int knots = stationModel.getWindBarb().getKnots();
+        double knots = stationModel.getWindBarb().getKnots();
         int endMarker = xCenter - shaftLength;
 
         GeneralPath barbLine = new GeneralPath(GeneralPath.WIND_EVEN_ODD);
