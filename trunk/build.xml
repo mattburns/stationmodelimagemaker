@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="stationmodelimagemaker" default="all" basedir=".">
+	
+	<property name="src" value="src" />
+	<property name="build" value="build" />
+	
+	<target name="all" depends="compile, jar"/>
+		
+	
+	<target name="compile">
+		<mkdir dir="${build}" />
+		<javac srcdir="${src}" destdir="${build}" />
+	</target>
+	
+	<target name="jar">	
+	    <jar destfile="stationmodelimagemaker.jar" basedir="${build}"/>
+	</target>
+</project>
