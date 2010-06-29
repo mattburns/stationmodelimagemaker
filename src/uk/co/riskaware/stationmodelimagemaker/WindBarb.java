@@ -2,16 +2,16 @@ package uk.co.riskaware.stationmodelimagemaker;
 
 public class WindBarb {
 
-    private final int direction;
-    private final int knots;
+    private final double direction;
+    private final double knots;
 
-    public WindBarb(int direction, int knots) {
+    public WindBarb(double direction, double knots) {
         super();
         this.direction = direction;
         this.knots = knots;
     }
 
-    public int getDirection() {
+    public double getDirection() {
         return direction;
     }
 
@@ -19,7 +19,7 @@ public class WindBarb {
         return Math.toRadians(direction);
     }
 
-    public int getKnots() {
+    public double getKnots() {
         return knots;
     }
 
